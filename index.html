@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-music-app6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <style jsx>
+      #bpm {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 1px;
+        background-color: none; /* スライダーの背景色 */
+        border-radius: 5px;
+        outline: none;
+        transition: background-color 0.3s;
+      }
+    
+      #bpm::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 4px; /* ノブの幅 */
+        height: 24px; /* ノブの高さ */
+        background-color: #000000; /* ノブの色 */
+        border: none;
+        border-radius: 0%; /* 四角形に変更 */
+        cursor: pointer;
+      }
+    
+      #bpm::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        background-color: none;
+        border: none;
+        border-radius: 0%;
+        cursor: pointer;
+      }
+    
+      #bpm::-ms-thumb {
+        width: 16px;
+        height: 16px;
+        background-color: none;
+        border: none;
+        border-radius: 0%;
+        cursor: pointer;
+      }
+    
+      #bpm:focus {
+        background-color: #000000; /* フォーカス時の色 */
+      }
+    </style>
+  </body>
+</html>
